@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+}
+
+.menuWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    text-align: right;
+}
+
+svg{
+    cursor: pointer;
+}
+
+#activeSideBar{
+    display: none;
+}
+
+
+body{
+    height: 100dvh;
+    background-image: url(images/bg-home.jpeg);
+    /* background-position: 10% 35%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* font-family:'Courier New', Courier, monospace */
+    font-family: 'Arial Narrow';
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.mainWrapper{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 1.75rem;
+    color: white;
+    background-color: hsla(218, 90%, 16%, 0.25);
+    padding: 10px 55px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+#overlay{
+    display: none;
+}
+
+.closeButton{
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+/* .closeButton:hover{
+    background-color: hsla(0, 0%, 100%, 0.60);
+} */
+
+.listContainer{
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: -100%;
+    /* flex-direction: column; */
+    text-align: start;
+    margin-left: auto;
+    margin-right: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: hsla(0, 0%, 100%, 0.35);
+    width: 270px;
+    border-radius: 8px;
+    transition: 0.25s ease-out;
+}
+
+
+.subjectList{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.subjectList a{
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subjectList a:hover{
+    background-color: hsla(0, 0%, 100%, 0.60);
+}
+
+#activeSideBar:checked ~ .listContainer{
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    transition: 0.25s ease-out;
+    z-index: 10;
+}
+
+#activeSideBar:checked ~ #overlay{
+    display: block;
+    /* background: blue; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+#activeSideBar:checked ~ .menuButton{
+    display: none;
+}
