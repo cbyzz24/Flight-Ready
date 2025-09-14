@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Wiz</title>
+    <link rel="stylesheet" href="subject.css">
+</head>
+
+<body>
+
+     <nav class="menuWrapper">
+
+        <label class="homeButton">
+            <a href="index.html">
+                <svg  xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#222222"><path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/></svg>
+            </a>
+        </label>
+        <label for="" class="subjectName">Aeronautical Decision-Making</label>
+        <input type="checkbox" class="menuToggle" name="menuToggle" id="activeSideBar">
+        <label class="menuButton" for="activeSideBar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#222222"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+
+        <label for="activeSideBar" id="overlay"></label>
+    
+        <div class="listContainer">
+            <label class="closeButton" for="activeSideBar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
+            </label>
+            <div class="subjectList">
+                <a href="subject1.html">Introduction to Flying</a>
+                <a href="subject2.html">Aeronautical Decision-Making</a>
+                <a href="subject3.html">Aircraft Construction</a>
+                <a href="subject4.html">Principles of Flight</a>
+                <a href="subject5.html">Aerodynamics of Flight</a>
+                <a href="#">Flight Controls</a>
+                <a href="#">Aircraft Systems</a>
+                <a href="#">Flight Instruments</a>
+                <a href="#">Flight Manuals & Other Docs</a>
+                <a href="#">Weight and Balance</a>
+                <a href="#">Aircraft Performance</a>
+                <a href="#">Weather Theory</a>
+                <a href="#">Aviation Weather Services</a>
+                <a href="#">Airport Operations</a>
+                <a href="#">Airspace</a>
+                <a href="#">Navigation</a>
+            </div>
+        </div>
+    
+    </nav>
+
+    <div class="contentWrapper">
+        <input type="checkbox" class="quizToggle" id="quizActive">
+        <label for="quizActive" class="startBtn">Start Quiz</label>
+        <label for="quizActive" class="textContainer" id="questionText">Sample Question Displays Here</label>
+        <button for="quizActive" class="answerBtn" id="answerBtn">Answer</button>
+        <!-- <label for="quizActive" class="answerBtn" id="answerBtn">Answer</label> -->
+        <label for="quizActive" class="textContainer" id="answerText">Sample Answer Displays Here</label>
+    </div>
+
+</body>
+
+
+
+</html>
