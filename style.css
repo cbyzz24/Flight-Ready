@@ -91,6 +91,7 @@ body{
     padding: 5px;
     border-radius: 5px;
     text-decoration: none;
+    color: #222222;
     cursor: pointer;
     font-weight: bold;
 }
