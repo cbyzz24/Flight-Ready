@@ -168,15 +168,34 @@ svg{
     display: none;
     margin-bottom: 10px;
     font-size: 1.35rem;
-    padding: 10px 20px;
+    width: 180px;
+    height: 40px;
     border-radius: 15px;
     /* background-color: #60697d; */
     background-color: hsl(120, 60%, 19%);
     color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+.questionBtn{
+    display: none;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    /* background-color: #60697d; */
+    background-color: hsl(120, 60%, 19%);
+    color: white;
+    border: none;
     cursor: pointer;
     transition: 0.4s ease-out;
 }
 
+.questionBtn:hover{
+    background-color: hsl(120, 89%, 26%);
+}
 .answerBtn:hover{
     background-color: hsl(120, 89%, 26%);
 }
@@ -209,3 +228,6 @@ svg{
 #quizActive:checked ~ .answerBtn{
     display: block;
 }
+/* #quizActive:checked ~ .questionBtn{
+    display: block;
+} */
