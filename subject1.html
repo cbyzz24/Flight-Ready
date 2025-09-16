@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Wiz</title>
     <link rel="stylesheet" href="subject.css">
+    <script src="main1.js"></script>
 </head>
 
 <body>
@@ -54,8 +55,8 @@
         <input type="checkbox" class="quizToggle" id="quizActive">
         <label for="quizActive" class="startBtn">Start Quiz</label>
         <label for="quizActive" class="textContainer" id="questionText">Question Displays Here</label>
-        <button for="quizActive" class="questionBtn" id="questionBtn">Show Question</button>
-        <button for="quizActive" class="answerBtn" id="answerBtn">Show Answer</button>
+        <button for="quizActive" class="questionBtn" id="questionBtn" onclick="showQuestion()">Show Question</button>
+        <button for="quizActive" class="answerBtn" id="answerBtn" onclick="showAnswer()">Show Answer</button>
         <!-- <label for="quizActive" class="answerBtn" id="answerBtn">Answer</label> -->
         <label for="quizActive" class="textContainer" id="answerText">Answer Displays Here</label>
     </div>
