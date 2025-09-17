@@ -1,6 +1,9 @@
 
 const questionBtnEl = document.getElementById("questionBtn");
 const answerBtnBtnEl = document.getElementById("answerBtn");
+const questionTextEl = document.getElementById("questionText");
+const answerTextEl = document.getElementById("answerText");
+// const startBtnEl = docunment.getElementById("startBtn");
 
 const quesBank = [
     ["What is the supreme law of the land in the United States?", "The Constitution"],
@@ -10,9 +13,12 @@ const quesBank = [
     ["How many amendments are there in the United States Constitution?", "27 amendments"],
 ];
 
+// function startQuiz(){
+//     alert("Quiz has started");
+// }
+
 function showQuestion(){
-    const questionTextEl = document.getElementById("questionText");
-    const answerTextEl = document.getElementById("answerText");
+    
 
     const bankLength = quesBank.length;
 
@@ -28,9 +34,9 @@ function showQuestion(){
 
     answerTextEl.innerText = "";
 
-    // questionBtnEl.style.display = none;
+    questionBtnEl.style.display = "none";
 
-    // answerBtnBtnEl.style.display = block;
+    answerBtnBtnEl.style.display = "block";
     // console.log(currentQues);
     // console.log(currentAns);
 }
@@ -38,7 +44,11 @@ function showQuestion(){
 function showAnswer(){
     const answerTextEl = document.getElementById("answerText");
     answerTextEl.innerText = currentAns;
+    questionBtnEl.style.display = "block";
+    answerBtnBtnEl.style.display = "none";
 }
+
+
 
 
 
