@@ -51,14 +51,26 @@
     
     </nav>
 
-    <div class="contentWrapper">
-        <input type="checkbox" class="quizToggle" id="quizActive">
-        <label for="quizActive" class="startBtn" id="startBtn" onclick="startQuiz()" >Start Quiz</label>
-        <label for="quizActive" class="textContainer" id="questionText">Question</label>
-        <button for="quizActive" class="questionBtn" id="questionBtn" onclick="showQuestion()">Show Question</button>
-        <button for="quizActive" class="answerBtn" id="answerBtn" onclick="showAnswer()">Show Answer</button>
-        <!-- <label for="quizActive" class="answerBtn" id="answerBtn">Answer</label> -->
-        <label for="quizActive" class="textContainer" id="answerText">Answer</label>
+    <div class="startDiv">
+        <button class="startBtn" id="startBtn" onclick="startQuiz()" >Start Quiz</button>
+    </div>
+
+
+
+    <div class="contentWrapper" id="contentWrapper">
+        
+        <div class="quesOutter">
+            <div class="wrapperHeader">Question</div>
+            <div class="questionText" id="questionText">Question Display</div>
+        </div>
+        
+        <button class="questionBtn" id="questionBtn" onclick="showQuestion()">Show Question</button>
+        <button class="answerBtn" id="answerBtn" onclick="showAnswer()">Show Answer</button>
+        
+        <div class="ansOutter">
+            <div class="wrapperHeader">Answer</div>
+            <div class="answerText" id="answerText">Answer Display</div>
+        </div>
     </div>
 
 </body>

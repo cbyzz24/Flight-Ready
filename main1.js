@@ -1,25 +1,25 @@
-
+const contentWrapperEl = document.getElementById("contentWrapper");
 const questionBtnEl = document.getElementById("questionBtn");
 const answerBtnBtnEl = document.getElementById("answerBtn");
 const questionTextEl = document.getElementById("questionText");
 const answerTextEl = document.getElementById("answerText");
-// const startBtnEl = docunment.getElementById("startBtn");
+const startBtnEl = docunment.getElementById("startBtn");
 
-const quesBank = [
+function startQuiz(){
+    contentWrapperEl.style.display = "flex";
+    const startBtn2 = document.getElementById("startBtn").style.display = "none";
+}
+
+
+
+function showQuestion(){
+    const quesBank = [
     ["What is the supreme law of the land in the United States?", "The Constitution"],
     ["How many branches of government are there in the United States?", "Three (Executive, Legislative, Judicial)"],
     ["Who is known as the 'Father of the Constitution'?", "James Madison"],
     ["What is the minimum voting age in the United States?", "18 years old"],
     ["How many amendments are there in the United States Constitution?", "27 amendments"],
 ];
-
-// function startQuiz(){
-//     alert("Quiz has started");
-// }
-
-function showQuestion(){
-    
-
     const bankLength = quesBank.length;
 
     let randomQAnum = Math.floor(Math.random() * bankLength);
