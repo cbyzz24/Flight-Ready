@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    box-sizing: border-box;
+
 }
 
 .menuWrapper{
@@ -13,20 +15,27 @@
 }
 
 .subjectName{
+    color:deepskyblue;
+    /* color:hsl(180, 100%, 30%); */
+    /* color: hsl(38, 21%, 62%); */
     text-align: center;
-    font-size: 1.55rem;
+    font-size: 1.30rem;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: underline;
-    padding: 5px 10px;
+    /* text-shadow: 1px 1px 4px hsla(0, 0%, 100%, 0.75); */
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    margin-top: 3px;
     border-radius: 5px;
-    /* background-color: hsla(36, 100%, 90%, 0.30); */
+    /* background-color: hsla(36, 100%, 90%, 0.22); */
 }
 
 body{
     position: relative;
     height: 100dvh;
     width: 100%;
-    font-family: 'Arial Narrow';    
+    font-family: 'Arial Narrow';
 }
 
 body::before{
@@ -44,13 +53,13 @@ body::before{
     z-index: -5
 }
 
-.mainWrapper{
+/* .mainWrapper{
     height: 100dvh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 #overlay{
     display: none;
@@ -144,12 +153,13 @@ svg{
 
 .contentWrapper{
     height: 89%;
-    margin: 0px 10px;
-    padding: 20px;
+    margin: 8px 5px;
+    padding: 5px;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid white; */
 }
 
 .startBtn{
@@ -173,12 +183,13 @@ svg{
 .answerBtn{
     display: none;
     margin-bottom: 10px;
-    font-size: 1.35rem;
+    font-size: .90rem;
+    padding: 12px 5px;
     width: 180px;
-    height: 40px;
     border-radius: 15px;
+    background-color: hsl(120, 60%, 30%);
+    /* background-color: hsl(120, 60%, 19%); */
     /* background-color: #60697d; */
-    background-color: hsl(120, 60%, 19%);
     color: white;
     border: none;
     cursor: pointer;
@@ -187,13 +198,14 @@ svg{
 .questionBtn{
     display: block;
     margin-bottom: 10px;
-    font-size: 1.35rem;
+    font-size: .90rem;
+    padding: 12px 5px;
     width: 180px;
-    height: 40px;
     border-radius: 15px;
+    background-color: hsl(197, 71%, 35%);
+    /* background-color: hsl(200, 70%, 19%); */
     /* background-color: #60697d; */
     /* background-color: hsl(120, 60%, 19%); */
-    background-color: hsl(200, 70%, 19%);
     /* background-color: hsl(200, 40%, 30%); */
     color: white;
     border: none;
@@ -214,11 +226,12 @@ svg{
     /* justify-content: center; */
     align-items: center;
     text-align: center;
+    margin-top: 12px;
     margin-bottom: 10px;
-    height: 250px;
-    width: 325px;
+    height: 255px;
+    width: 345px;
     font-size: 1.25rem;
-    color: orange;
+    color: goldenrod;
     background-color: hsl(220, 2%, 25%);
     padding: 10px 10px;
     border-radius: 6px;
@@ -236,11 +249,16 @@ svg{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0px 5px;
     margin: 2px 5px 15px 5px;
     height: 200px;
-    width: 310px;
+    width: 98%;
     font-size: 1.25rem;
     color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: rgba(255, 255, 255, 0.10) transparent;
+    /* scrollbar-color: rgba(255, 255, 255, 0.30) transparent; */
     /* border: 1px solid white; */
     
 }
@@ -250,11 +268,12 @@ svg{
     /* justify-content: center; */
     align-items: center;
     text-align: center;
+    /* padding: 0px 5px; */
     margin-bottom: 10px;
-    height: 250px;
-    width: 325px;
+    height: 255px;
+    width: 345px;
     font-size: 1.25rem;
-    color: orange;
+    color: goldenrod;
     background-color: hsl(220, 2%, 25%);
     padding: 10px 10px;
     border-radius: 6px;
@@ -267,9 +286,14 @@ svg{
     text-align: center;
     margin: 2px 5px 15px 5px;
     height: 200px;
-    width: 310px;
+    width: 98%;
     font-size: 1.25rem;
     color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: rgba(255, 255, 255, 0.10) transparent;
+    /* scrollbar-color: rgba(255, 255, 255, 0.30) transparent; */
+    /* border: 1px solid white; */
 }
 
 /* @keyframes rotate{
