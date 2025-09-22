@@ -20,7 +20,7 @@ svg{
 
 body{
     height: 100dvh;
-    background-image: url(images/bg-home.jpeg);
+    background-image: url(images/bg-home1.png);
     /* background-position: 10% 35%; */
     background-position: center;
     background-repeat: no-repeat;
@@ -41,12 +41,18 @@ body{
 }
 
 .title{
-    font-size: 1.75rem;
-    color: white;
-    background-color: hsla(218, 90%, 16%, 0.25);
+    text-align: center;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2.00rem;
+    text-shadow: 2px 2px 2px skyblue;
+    text-decoration:underline;
+    color: slategray;
+    /* background-color: hsla(218, 90%, 16%, 0.25); */
     padding: 10px 55px;
     border-radius: 6px;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    /* border: 1px solid white; */
+    /* box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25); */
 }
 
 #overlay{
