@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Wiz</title>
     <link rel="stylesheet" href="subject.css">
+    <script src="main13.js" defer ></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
             </label>
             <div class="subjectList">
-               <a href="subject1.html">Introduction to Flying</a>
+                <a href="subject1.html">Introduction to Flying</a>
                 <a href="subject2.html">Aeronautical Decision-Making</a>
                 <a href="subject3.html">Aircraft Construction</a>
                 <a href="subject4.html">Principles of Flight</a>
@@ -50,14 +51,25 @@
     
     </nav>
 
-    <div class="contentWrapper">
-        <input type="checkbox" class="quizToggle" id="quizActive">
-        <label for="quizActive" class="startBtn">Start Quiz</label>
-        <label for="quizActive" class="textContainer" id="questionText">Question Displays Here</label>
-        <button for="quizActive" class="questionBtn" id="questionBtn">Show Question</button>
-        <button for="quizActive" class="answerBtn" id="answerBtn">Show Answer</button>
-        <!-- <label for="quizActive" class="answerBtn" id="answerBtn">Answer</label> -->
-        <label for="quizActive" class="textContainer" id="answerText">Answer Displays Here</label>
+    <div class="startDiv">
+        <button class="startBtn" id="startBtn" onclick="startQuiz()" >Start Quiz</button>
+    </div>
+
+
+
+    <div class="contentWrapper" id="contentWrapper">
+        
+        <div class="quesOutter">
+            <div class="wrapperHeader">Question</div>
+            <div class="questionText" id="questionText">Question Display</div>
+        </div>
+        <button class="questionBtn" id="questionBtn" onclick="showQuestion()">Show Question</button>
+        <button class="answerBtn" id="answerBtn" onclick="showAnswer()">Show Answer</button>
+        
+        <div class="ansOutter">
+            <div class="wrapperHeader">Answer</div>
+            <div class="answerText" id="answerText">Answer Display</div>
+        </div>
     </div>
 
 </body>
